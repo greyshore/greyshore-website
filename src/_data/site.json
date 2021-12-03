@@ -1,17 +1,17 @@
 {
-  "baseURL": "https://awesome11ty.ttntm.me",
-  "author": "AWE.SOME",
-  "description": "AWE.SOMEty - A Landing Page Template for 11ty",
-  "title": "AWE.SOMEty - A Landing Page Template for 11ty",
+  "baseURL": "https://greyshore.com/",
+  "author": "Greyshore",
+  "description": "Greyshore Associates | Official Website",
+  "title": "Greyshore Associates",
   "language": "en",
   "social": [
     {
-      "title": "Twitter",
-      "url": "https://twitter.com/#"
+      "title": "Medium",
+      "url": "https://medium.com/simply-technology"
     },
     {
       "title": "LinkedIn",
-      "url": "https://linkedin.com/company/#"
+      "url": "https://www.linkedin.com/company/greyshore/"
     }
   ]
 }
