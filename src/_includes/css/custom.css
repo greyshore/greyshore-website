@@ -26,7 +26,7 @@ html {
 
     body::-webkit-scrollbar-thumb
     {
-        background-color: #7c3aed;
+        background-color: #4a275a;
     }
 }
 
@@ -135,4 +135,9 @@ html {
 
 .tippy-tooltip[x-placement^='bottom'] .tippy-arrow {
     border-bottom-color: #ccc;
+}
+
+.bg-hero-pattern {
+  background-repeat:no-repeat;
+  clip-path: ellipse(81% 100% at 51.86% 0%);
 }

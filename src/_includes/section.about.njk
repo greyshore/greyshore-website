@@ -1,14 +1,14 @@
 {% for item in collections.sections %}
   {% if item.data.type === 'about' %}
-    <div id="about" class=" min-h-screen flex justify-around  p-48">
+    <div id="about" class=" min-h-screen flex bg-white px-48 py-36">
         <div class="p-12">
-          <p>{{item.data.subtitle}}</p>
-          <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4">{{ item.data.title }}</h2>
+          <p class="text-purple-650 font-bold">{{item.data.subtitle}}</p>
+          <h2 class="font-bold tracking-wider text-gray-850 text-4xl mb-4">{{ item.data.title }}</h2>
         </div>
-        <div class="font-light text-black text-xl p-12">
-        <p class="py-2">{{item.data.paragraph1 | safe}}</p>
-        <p class="py-2">{{item.data.paragraph2 | safe}}</p>
-        <p class="py-2">{{item.data.paragraph3 | safe}}</p>
+        <div class="font-light text-black text-xl px-28 py-12">
+          <p class="py-2">{{item.data.paragraph1 | safe}}</p>
+          <p class="py-2">{{item.data.paragraph2 | safe}}</p>
+          <p class="py-2">{{item.data.paragraph3 | safe}}</p>
           {# {{ item.templateContent | safe }} #}
         </div>
      

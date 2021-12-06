@@ -25,6 +25,9 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
+      gray: {
+        850: '#183B56'
+      },
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
@@ -32,8 +35,8 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       purple: {
-        250: 'FAF8FF',
-        650: '#4a275a'
+        250: '#FAF8FF',
+        650: '#4a275a',
       },
       pink: colors.pink,
     },
@@ -256,7 +259,7 @@ module.exports = {
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
-        'Roboto',
+        'Open Sans',
         '"Helvetica Neue"',
         'Arial',
         '"Noto Sans"',

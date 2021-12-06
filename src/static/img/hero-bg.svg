@@ -1,7 +1,7 @@
-<svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="-0.286133" width="1440" height="800" fill="#4A275A" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"/>
+<svg width="1680" height="900" viewBox="0 0 1680 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="-0.286133" width="1680" height="900" fill="#4A275A" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"/>
 <mask id="mask0_25_837" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="0" width="1441" height="800">
-<rect x="-0.286133" width="1440" height="800" fill="white"/>
+<rect x="-0.286133" width="1680" height="900" fill="white"/>
 </mask>
 <g mask="url(#mask0_25_837)">
 <path opacity="0.05" fill-rule="evenodd" clip-rule="evenodd" d="M-111.097 532.732L301.912 422.066C307.44 420.585 313.338 422.169 317.38 426.221L366.686 475.643C370.714 479.681 372.288 485.557 370.819 491.067L352.829 558.521C351.355 564.051 347.039 568.372 341.511 569.853L-72.2801 680.728L-111.097 532.732Z" fill="url(#paint0_linear_25_837)"/>
