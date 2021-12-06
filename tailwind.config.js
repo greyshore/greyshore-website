@@ -444,6 +444,8 @@ module.exports = {
       full: '100%',
       screen: '100vh',
       header: '80vh',
+      tablet: '70vh',
+      mobile: '50vh',
     }),
     inset: (theme, { negative }) => ({
       auto: 'auto',
