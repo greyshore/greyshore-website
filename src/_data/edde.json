@@ -1,0 +1,29 @@
+{
+  "row1": [{
+      "title": "Consultancies",
+      "icon": "consultancies.svg",
+      "content": "delivering software products and services, that need to rapidly scaffold ‘fit for purpose’ underlying public-cloud platforms."
+    },
+    {
+      "title": "Enterprises",
+      "icon": "enterprises.svg",
+      "content": "in need of turnkey innovation labs or new product development platforms."
+    },
+    {
+      "title": "Entrepreneurs",
+      "icon": "entrepreneurs.svg",
+      "content": "who want to quickly ‘spin up and spin down’ public-cloud product and service environments for MVPs and product launches."
+    }
+  ],
+  "row2": [{
+      "title": "State and Local Governments",
+      "icon": "governments.svg",
+      "content": "operating server rooms, that want to move to the cloud but don’t have extensive infrastructure as code knowledge"
+    },
+    {
+      "title": "Bootcamps, hackathons, or apprenticed software training",
+      "icon": "training.svg",
+      "content": "that need a turnkey public-cloud platform to support their offerings."
+    }
+  ]
+}

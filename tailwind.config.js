@@ -12,6 +12,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
+      xs: '320px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -105,6 +106,7 @@ module.exports = {
       'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
       'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))',
       'hero-pattern': "url('/img/hero-bg.svg')",
+      'edde-pattern': "url('/img/edde-bg.svg')"
     },
     backgroundOpacity: (theme) => theme('opacity'),
     backgroundPosition: {
