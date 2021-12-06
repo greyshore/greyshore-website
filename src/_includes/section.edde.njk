@@ -17,10 +17,10 @@
       <div class="xs:grid xs:grid-cols-1 md:grid md:grid-cols-3 md:gap-1 md:py-5">
         {% for item in edde.row1 %}
           <div class="flex flex-row justify-center items-start lg:m-2">
-            <img src="/img/features/{{ item.icon }}" alt="{{ item.title }}" class="mr-4">
+            <img src="/img/features/{{ item.icon }}" alt="{{ item.title }}" class="m-4">
             <div class="sm:w-2/3 xl:w-3/4">
-              <h3 class="tracking-wider text-purple-300 font-bold xs:text-xl sm:text-1xl mb-2">{{ item.title }}</h3>
-              <div class="xs:text-m sm:text-lg">
+              <h3 class="tracking-wider text-purple-300 font-bold xs:text-xl sm:text-1xl my-2">{{ item.title }}</h3>
+              <div class="xs:text-m sm:text-lg mr-4">
                 {{ item.content | markdown | safe }}
               </div>
             </div>
@@ -31,10 +31,10 @@
       <div class="xs:grid xs:grid-cols-1 md:grid md:grid-cols-2 md:gap-1 md:py-5">
         {% for item in edde.row2 %}
           <div class="flex flex-row justify-center items-start lg:m-2">
-            <img src="/img/features/{{ item.icon }}" alt="{{ item.title }}" class="mr-4">
+            <img src="/img/features/{{ item.icon }}" alt="{{ item.title }}" class="m-4">
             <div class="sm:w-2/3 xl:w-3/5">
-              <h3 class="tracking-wider text-purple-300 font-bold xs:text-xl sm:text-1xl mb-2">{{ item.title }}</h3>
-              <div class="xs:text-m sm:text-lg">
+              <h3 class="tracking-wider text-purple-300 font-bold xs:text-xl sm:text-1xl my-2">{{ item.title }}</h3>
+              <div class="xs:text-m sm:text-lg mr-4">
                 {{ item.content | markdown | safe }}
               </div>
             </div>
