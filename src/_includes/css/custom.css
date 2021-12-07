@@ -140,7 +140,7 @@ html {
 
 .bg-hero-pattern {
   background-repeat:no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 150%;
   clip-path: ellipse(81% 100% at 51.86% 0%);
 }
 
