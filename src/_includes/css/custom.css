@@ -140,9 +140,15 @@ html {
 
 .bg-hero-pattern {
   background-repeat:no-repeat;
+  background-size: 100% 100%;
   clip-path: ellipse(81% 100% at 51.86% 0%);
 }
 
 header > h1 {
   line-height: 1.25;
+}
+
+.bg-edde-pattern {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
