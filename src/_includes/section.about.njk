@@ -1,11 +1,11 @@
 {% for item in collections.sections %}
   {% if item.data.type === 'about' %}
-    <div id="about" class="flex flex-col xl:flex-row bg-white xl:px-48 md:px-12 text-center md:text-left px-10 xl:py-32 py-16">
-        <div class="xl:p-12 md:pl:12 md:pr:4">
-          <h2 class="text-purple-650 font-bold sm:text-center pb-4">{{item.data.subtitle}}</h2>
-          <p class="font-medium tracking-wider sm:text-center text-gray-850 xl:text-4xl md:text-2xl  mb-4">{{ item.data.title }}</p>
+    <div id="about" class="flex flex-col xl:flex-row bg-white px-8 md:px-12 xl:px-48 text-center xl:text-left py-10 md:py-16 xl:py-32">
+        <div class="md:pl:12 md:pr:4 xl:p-12">
+          <h2 class="text-purple-650 font-bold text-center xl:text-left pb-4">{{item.data.subtitle}}</h2>
+          <p class="font-medium tracking-wider text-center xl:text-left text-gray-850 text-2xl xl:text-4xl mb-4">{{ item.data.title }}</p>
         </div>
-        <div class="font-light text-black md:text-xl text-lg xl:pl-28 xl:px-28 md:pl-10 md:pr-6 xl:py-20 py-10 text-center xl:text-left">
+        <div class="font-light text-black text-base md:text-xl md:pl-10 md:pr-6 xl:pl-28 xl:px-28 py-2 xl:py-20 text-center xl:text-left">
           <p class="py-2">{{item.data.paragraph1 | safe}}</p>
           <p class="py-2">{{item.data.paragraph2 | safe}}</p>
           <p class="py-2">{{item.data.paragraph3 | safe}}</p>

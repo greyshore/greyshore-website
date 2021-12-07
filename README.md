@@ -52,3 +52,7 @@ Best have a look at `./layouts/base.njk` first to understand how it all comes to
 **Change images:**
 
 Images are stored in `./static/img/`; everything in there can be considered a placeholder that should eventually be replaced with your actual production images.
+
+**Responsive Design Guidelines:**
+
+This project relies on TailwindCSS. Classes for each element should be mobile first as the base style. From there, responsive design should target larger screens. [Please reference this link for additional information about Tailwind's breakpoints](https://tailwindcss.com/docs/breakpoints). Breakpoints can be customized in the tailwind.config.js file.
