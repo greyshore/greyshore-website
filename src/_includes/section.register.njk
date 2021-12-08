@@ -1,27 +1,27 @@
 {% for item in collections.sections %}
   {% if item.data.type === 'register' %}
     <div id="register" class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-750">
-        <h2 class="font-bold tracking-widest text-gray-850 text-center text-2xl xl:text-4xl mb-4 pt-24">{{ item.data.title }}</h2>
+        <h2 class="font-bold tracking-widest text-gray-850 text-center text-2xl mb-4 pt-24 xl:text-4xl">{{ item.data.title }}</h2>
         <div class="font-light text-gray-400 text-xl">
           {{ item.templateContent | safe }}
         </div>
         <div class="w-full">
   <div class="h-72"></div>
-    <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
-        <div class="bg-white w-full shadow rounded p-8 sm:p-12 -mt-72">   
+    <div class="max-w-5xl mx-auto px-6 mb-12 sm:px-6 lg:px-8">
+        <div class="bg-white w-full shadow rounded p-8 -mt-72 sm:p-12">   
           <form action="" method="POST" name="contact-form" data-netlify="true">
             <div class="md:flex items-center mt-8">
-              <div class=" w-full md:w-1/2 flex flex-col">
+              <div class=" w-full flex flex-col md:w-1/2">
                 <label for="fullname" autocomplete="name" class="font-semibold leading-none text-left text-gray-550">Full Name</label>
                 <input id="fullname" name="fullname" type="text" class=" text-gray-900 p-3 mt-4 bg-gray-100 border rounded border-gray-550"/>
               </div>
             </div>
-            <div class="md:flex items-center mt-12">
-              <div class="w-full md:w-1/2 flex flex-col">
+            <div class="items-center mt-12 md:flex">
+              <div class="w-full flex flex-col md:w-1/2 ">
                 <label for="phone" class="font-semibold leading-none text-left text-gray-550">Phone</label>
                 <input id="phone" name="phone" autocomplete="tel" type="tel" class="text-gray-900 p-3 mt-4 bg-gray-100 border rounded border-gray-550" />
               </div>
-              <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
+              <div class="w-full flex flex-col md:w-1/2 md:ml-6 md:mt-0 mt-4">
                 <label for="email" class="font-semibold leading-none text-left text-gray-550">Contact Email</label>
                 <input id="email" name="email" type="email" autocomplete="email" class="text-gray-900 p-3 mt-4 bg-gray-100 border rounded border-gray-550"/>
               </div>
