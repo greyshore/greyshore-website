@@ -138,6 +138,8 @@ html {
     border-bottom-color: #ccc;
 }
 
+/* Hero Section */
+
 .bg-hero-pattern {
   background-repeat:no-repeat;
   background-size: 100% 100%;
@@ -148,7 +150,29 @@ header > h1 {
   line-height: 1.25;
 }
 
+/* Edde Section */
+
 .bg-edde-pattern {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+/* Form Section */
+
+.border {
+  border-width: 2px !important;
+}
+
+input:focus, textarea:focus {
+  background: rgba(74, 39, 90, .05);
+  border: 2px solid rgba(74, 39, 90, 1);
+  outline-style: solid;
+  outline-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .fullname {
+    width: 48% !important;
+  }
+}
+
