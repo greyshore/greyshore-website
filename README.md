@@ -16,9 +16,9 @@ All other dependencies are either linked from a CDN or included in this reposito
 **Setup:**
 
 1. Fork, clone or download
-2. `cd` into the root folder
+2. `cd` into the `src` folder
 3. run `npm install`
-4. run `npm run serve`
+4. run `npm run dev`
 5. open a browser and go to `http://localhost:8080`
 
 **Basic configuration:**
