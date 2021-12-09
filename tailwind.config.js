@@ -106,7 +106,8 @@ module.exports = {
       'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
       'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))',
       'hero-pattern': "url('/img/hero-bg.svg')",
-      'edde-pattern': "url('/img/edde-bg.svg')"
+      'edde-pattern': "url('/img/edde-bg.svg')",
+      'quote-pattern': "url('/img/hero-bg.svg')"
     },
     backgroundOpacity: (theme) => theme('opacity'),
     backgroundPosition: {
