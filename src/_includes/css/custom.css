@@ -170,9 +170,7 @@ input:focus, textarea:focus {
   outline-color: transparent;
 }
 
-@media only screen and (max-width: 768px) {
-  .fullname {
-    width: 48% !important;
-  }
+.bg-quote-pattern {
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
 }
-
