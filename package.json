@@ -4,10 +4,10 @@
   "description": "The Greyshore Associates Official Website",
   "scripts": {
     "build": "npm-run-all eleventy:build",
-		"dev": "npm-run-all eleventy:serve",
-		"eleventy:serve": "eleventy --serve",
-		"eleventy:build": "eleventy",
-		"test": "npm-run-all --parallel dev cypress",
+    "dev": "npm-run-all eleventy:serve",
+    "eleventy:serve": "eleventy --serve",
+    "eleventy:build": "eleventy",
+    "test": "npm-run-all --parallel dev cypress",
     "cypress": "npx cypress open"
   },
   "author": "Greyshore Team",
@@ -23,5 +23,8 @@
     "postcss": "^8.2.9",
     "postcss-import": "^14.0.0",
     "tailwindcss": "^2.0.4"
+  },
+  "dependencies": {
+    "jshint": "^2.13.1"
   }
 }

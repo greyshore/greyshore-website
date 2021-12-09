@@ -4,35 +4,31 @@
     <p>11327 Stonebriar Drive</p>
     <p>Charlotte, NC 28277</p>
     <ul class="list-none flex flex-row justify-evenly">
-      <li>
-        <a class="text-gray-800 hover:text-purple-600 no-underline" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
-      </li>
-    {% endfor %}
-    {% for item in site.social %}
+      {% for item in site.social %}
+        <li>
+          <a class="text-gray-800 hover:text-purple-600 no-underline" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
   <h3 class="font-bold">
     <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#about">About Us</button>
   </h3>
+  <h3>
+    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#edde">Our Product</button>
+  </h3>
   <h3 class="font-bold">
     <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#register">Contact Us</button>
   </h3>
-  <h3>
-    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#accessibility">Accessibility</button>
-  </h3>
-  <h3>
-    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#accessibility">Our Product</button>
-  </h3>
-
 </footer>
 
 <!-- "Follow" Tooltip template -->
 <template id="followTip">
-  <a href="{{ item.url }}"
+  {% for item in site.social %}
+    <a href="{{ item.url }}"
       class="inline-block text-gray-200 text-sm bg-purple-600 shadow-md hover:bg-gray-200 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1"
       target="_blank" rel="noopener">{{ item.title }}</a>
-{% endfor %}
-{% for item in site.social %}
+  {% endfor %}
 </template>
 
 <div class="">
