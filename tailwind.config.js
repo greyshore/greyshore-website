@@ -26,7 +26,9 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
+      gray: colors.coolGray,
       gray: {
+        550: '#5A7184',
         850: '#183B56'
       },
       red: colors.red,
@@ -37,6 +39,7 @@ module.exports = {
       purple: colors.violet,
       purple: {
         250: '#FAF8FF',
+        350: '#6e527b',
         650: '#4a275a',
       },
       pink: colors.pink,
