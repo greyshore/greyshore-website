@@ -1,4 +1,4 @@
-<footer class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
+{# <footer class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
   <div class="text-center pr-0 sm:pr-8 py-4">
     <ul class="list-none">
       {% for item in site.social %}
@@ -30,17 +30,37 @@
       </li>
     </ul>
   </div>
+</footer> #}
+
+<footer class="flex flex-col items-center md:flex-row justify-evenly">
+  {# Column 1 #}
+  <div class="flex flex-col flex-wrap py-2">
+    <h3 class="font-bold">Greyshore Associates</h3>
+    <p>11327 Stonebriar Drive</p>
+    <p>Charlotte, NC 28277</p>
+    <ul class="list-none flex flex-row justify-evenly">
+      {% for item in site.social %}
+        <li>
+          <a class="text-gray-800 hover:text-purple-600 no-underline" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {# Column 2 #}
+  <h3 class="font-bold">
+    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#about">About Us</button>
+  </h3>
+  {# Column 3 #}
+  <h3>
+    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#edde">Our Product</button>
+  </h3>
+  {# Column 4 #}
+  <h3 class="font-bold">
+    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#register">Contact Us</button>
+  </h3>
+  
 </footer>
-<div class="w-full">
-  <span class="block text-center text-gray-800 text-sm font-light">
-    &copy; AWE.SOME
-  </span>
-</div>
-<div class="">
-  <a id="btt"
-    class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-purple-600 hover:bg-gray-200 hover:text-purple-600 hover:border-browngray no-underline px-6 py-1 bg-purple-600 shadow-md"
-    href="#top" title="Back to Top">UP</a>
-</div>
+
 <!-- "Follow" Tooltip template -->
 <template id="followTip">
   {% for item in site.social %}
@@ -49,3 +69,9 @@
       target="_blank" rel="noopener">{{ item.title }}</a>
   {% endfor %}
 </template>
+
+<div class="">
+  <a id="btt"
+    class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-purple-600 border rounded-md border-purple-600 hover:bg-gray-200 hover:text-purple-600 hover:border-browngray no-underline px-6 py-1 bg-purple-600 shadow-md"
+    href="#top" title="Back to Top">UP</a>
+</div>
