@@ -174,3 +174,36 @@ input:focus, textarea:focus {
   background-repeat: no-repeat;
   background-size: 100% 120%;
 }
+
+.quote {
+  width: 3rem;
+  display: inline !important;
+  padding-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.quote-reverse {
+  transform: scaleY(1);
+  transform: scale(-1, -1);
+  display: inline !important;
+  width: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .quote, .quote-reverse {
+    width: 1rem;
+  }
+  .quote {
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .quote-reverse {
+    margin-left: 0;
+    margin-top: .5rem;
+  }
+}
