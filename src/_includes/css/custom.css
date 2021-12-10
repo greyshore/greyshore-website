@@ -170,6 +170,8 @@ input:focus, textarea:focus {
   outline-color: transparent;
 }
 
+/* Quote Section */
+
 .bg-quote-pattern {
   background-repeat: no-repeat;
   background-size: 100% 120%;
@@ -207,3 +209,15 @@ input:focus, textarea:focus {
     margin-top: .5rem;
   }
 }
+
+/* Footer Section */
+
+abbr[title] {
+  cursor: default;
+  border-bottom: 0;
+  text-decoration: none !important;
+}
+
+/* .footer {
+  grid-template-columns: 1fr 1fr 2fr !important;
+} */
