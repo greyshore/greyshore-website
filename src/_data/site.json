@@ -4,17 +4,25 @@
   "description": "Greyshore Associates | Official Website",
   "title": "Greyshore Associates",
   "language": "en",
-  "nav": [
+  "navigation": [
     {
-      "about": "About Us"
+      "title": "Home",
+      "url": "https://greyshore.com"
     },
     {
-      "edde": "Our Product"
+      "title": "About Us",
+      "url": "#about"
     },
     {
-      "contact": "Contact Us"
+      "title": "Our Product",
+      "url": "#edde"
+    },
+    {
+      "title": "Contact Us",
+      "url": "#register"
     }
   ],
+  "hero": "Digital Transformation begins with people. All people.",
   "social": [
     {
       "title": "Medium",
