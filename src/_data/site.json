@@ -4,6 +4,17 @@
   "description": "Greyshore Associates | Official Website",
   "title": "Greyshore Associates",
   "language": "en",
+  "nav": [
+    {
+      "about": "About Us"
+    },
+    {
+      "edde": "Our Product"
+    },
+    {
+      "contact": "Contact Us"
+    }
+  ],
   "social": [
     {
       "title": "Medium",
