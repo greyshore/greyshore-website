@@ -1,28 +1,96 @@
-<footer class="flex flex-col items-center md:flex-row justify-evenly">
-  <div class="flex flex-col flex-wrap py-2">
-    <h3 class="font-bold">Greyshore Associates</h3>
-    <p>11327 Stonebriar Drive</p>
-    <p>Charlotte, NC 28277</p>
-    <ul class="list-none flex flex-row justify-evenly">
-      {% for item in site.social %}
+<footer class="bg-white" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class=" mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-16">
+    <div class="footer xl:grid xl:grid-cols-3">
+      <div class="space-y-8">
+        <h2 class="text-lg font-semibold text-gray-400 tracking-wider uppercase">Greyshore Associates</h2>
+        <p class="text-gray-500 text-base">
+         11327 Stonebriar Dr. <br />
+         Charlotte, <abbr title="North Carolina">NC</abbr> 28277
+        </p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <img src="../../img/twitter.svg" alt="twitter link" />
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">LinkedIn</span>
+            <img src="../../img/linkedin.svg" alt="linkedin link" />
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Medium</span>
+            <img src="../../img/medium.svg" alt="medium link" />
+          </a>
+        </div>
+      </div>
+  <div class="mt-12 grid grid-cols-2 xl:mt-0">
+    <div class="md:grid md:grid-cols-3 md:gap-8">
+      <div class="mt-12 md:mt-0">
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+            About Greyshore
+          </h3>
+          <ul role="list" class="mt-4 space-y-4">
+            <li>
+              <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-12 md:mt-0">
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+            Our Product
+          </h3>
+          <ul role="list" class="mt-4 space-y-4">
+            <li>
+              <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                EDDE
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-12 md:mt-0">
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+            Contact Us
+          </h3>
+          <ul role="list" class="mt-4 space-y-4">
+            <li>
+              <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                Keep in Touch
+              </a>
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+    <div class="mt-12 md:mt-0">
+      <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+        Accessibility Statement
+      </h3>
+      <ul role="list" class="mt-4 space-y-4">
         <li>
-          <a class="text-gray-800 hover:text-purple-600 no-underline" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
+          <p class="text-base text-gray-500 hover:text-gray-900">
+            Greyshore believes in providing products and services that are accessible to the widest audience possible.This site was created using inclusive design principles, along with A11y considerations, to meet WCAG 2.1 Level AA guidelines. Our credo is continuous improvement together, so if we missed something, let us know!
+          </p>
         </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <h3 class="font-bold">
-    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#about">About Us</button>
-  </h3>
-  <h3>
-    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#edde">Our Product</button>
-  </h3>
-  <h3 class="font-bold">
-    <button class="px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#register">Contact Us</button>
-  </h3>
+      </ul>
+    </div>
+    </div>
+   <div class="w-full mt-12 border-t border-gray-200 pt-8">
+      <p class="text-base text-gray-400 xl:text-center">
+        &copy; 2020 Greyshore Associates. All rights reserved.
+      </p>
+    </div>
 </footer>
 
-<!-- "Follow" Tooltip template -->
+ <!-- "Follow" Tooltip template -->
 <template id="followTip">
   {% for item in site.social %}
     <a href="{{ item.url }}"
@@ -34,5 +102,5 @@
 <div class="">
   <a id="btt"
     class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-purple-600 border rounded-md border-purple-600 hover:bg-gray-200 hover:text-purple-600 hover:border-browngray no-underline px-6 py-1 bg-purple-600 shadow-md"
-    href="#top" title="Back to Top">UP</a>
+    href="#top" title="Back to Top">up</a>
 </div>
