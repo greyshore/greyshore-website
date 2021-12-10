@@ -11,14 +11,19 @@
     </button>
   </div>
   {# Navigation list items #}
-  <div id="menu" class="flex-col absolute top-16 left-0 z-20 font-semibold hidden pt-0 bg-white shadow-md w-full md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+  <nav id="menu" >
+    <ul class="flex-col absolute top-16 left-0 z-20 font-semibold hidden pt-0 bg-white shadow-md w-full md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
     {% for item in site.navigation %}
-       <a class="text-center w-full hover:border md:text-white md:w-auto md:pr-4 py-2 md:py-1"
-      href="{% if isFront %}{{item.url}}{% else %}{{ site.baseURL }}/{{item.url}}{% endif %}">
-        {{item.title}}
-      </a>
+      <li>
+        <a class="text-center w-full hover:border md:text-white md:w-auto md:pr-4 py-2 md:py-1"
+        href="{% if isFront %}{{item.url}}{% else %}{{ site.baseURL }}/{{item.url}}{% endif %}">
+          {{item.title}}
+        </a>
+      </li>  
     {% endfor %}
-  </div>
+    </ul>
+    
+  </nav>
  {# Hero #}
  <div class="flex flex-col text-center justify-center h-52 px-4 md:h-72 lg:h-96">
     <h1 class="text-white tracking-widest text-xl sm:px-40 md:text-3xl lg:text-4xl xl:text-6xl">

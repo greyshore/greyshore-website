@@ -6,6 +6,10 @@
   "language": "en",
   "navigation": [
     {
+      "title": "Home",
+      "url": "https://greyshore.com"
+    },
+    {
       "title": "About Us",
       "url": "#about"
     },
