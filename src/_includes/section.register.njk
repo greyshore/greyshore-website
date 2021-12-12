@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+
 {% for item in collections.sections %}
   {% if item.data.type === 'register' %}
     <div id="register" class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-750">
@@ -9,32 +11,35 @@
   <div class="h-72"></div>
     <div class="max-w-5xl mx-auto px-6 mb-12 sm:px-6 lg:px-8">
         <div class="bg-white w-full shadow rounded p-8 -mt-72 sm:p-12">   
-          <form action="" method="POST" name="contact-form" data-netlify="true">
+          <form action="" method="POST" name="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="hidden">
+              <label>Fill this out if you're a bot: <input name="bot-field" /></label>
+            </p>
             <div class="md:flex items-center mt-8">
               <div class=" w-full flex flex-col md:w-1/2">
-                <label for="fullname" autocomplete="name" class="font-semibold leading-none text-left text-gray-550">Full Name</label>
-                <input id="fullname" name="fullname" type="text" class=" text-gray-900 p-3 mt-4 bg-gray-100 border rounded border-gray-550"/>
+                <label for="fullname" autocomplete="name" class="font-light text-base text-black leading-none text-left">Full Name</label>
+                <input id="fullname" name="fullname" type="text" required aria-label="Full name (Required)" class="text-input p-3 mt-4 border rounded border-black"/>
               </div>
             </div>
             <div class="items-center mt-12 md:flex">
               <div class="w-full flex flex-col md:w-1/2 ">
-                <label for="phone" class="font-semibold leading-none text-left text-gray-550">Phone</label>
-                <input id="phone" name="phone" autocomplete="tel" type="tel" class="text-gray-900 p-3 mt-4 bg-gray-100 border rounded border-gray-550" />
+                <label for="phone" class="font-light text-base text-black leading-none text-left">Phone</label>
+                <input id="phone" name="phone" autocomplete="tel" type="tel" required aria-label="Phone number (Required)" class="text-input p-3 mt-4 bg-gray-100 border rounded border-black" />
               </div>
               <div class="w-full flex flex-col md:w-1/2 md:ml-6 md:mt-0 mt-4">
-                <label for="email" class="font-semibold leading-none text-left text-gray-550">Contact Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" class="text-gray-900 p-3 mt-4 bg-gray-100 border rounded border-gray-550"/>
+                <label for="email" class="font-light text-base text-black leading-none text-left">Contact Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-label="Email (Required)" class="text-input p-3 mt-4 bg-gray-100 border rounded border-black"/>
               </div>
             </div>
                 <div>
                   <div class="w-full flex flex-col mt-8">
-                      <label for="message" class="font-semibold leading-none text-left text-gray-550">How can we help you?</label>
-                      <textarea id="message" name="message" type="text" class="h-40 text-base text-gray-900 p-3 mt-4 bg-gray-100 border rounded border-gray-550"></textarea>
+                      <label for="message" class="font-light text-base text-black leading-none text-left">How can we help you?</label>
+                      <textarea id="message" name="message" type="text" required aria-label="Message (Required)" class="h-40 text-base text-input p-3 mt-4 bg-gray-100 border rounded border-black"></textarea>
                   </div>
                 </div>
                 
                 <div class="pt-4 flex items-center w-full">
-                  <p class="font-medium text-base text-gray-550">{{item.data.privacy}}</p>
+                  <p class="font-light text-base text-black">{{item.data.privacy}}</p>
                 </div>
                  <button class="submit mt-9 font-semibold leading-none text-white py-4 px-16 bg-purple-650 rounded hover:bg-purple-350 focus:ring-2 focus:ring-offset-2 focus:ring-purple-650 focus:outline-none">
                       Submit
