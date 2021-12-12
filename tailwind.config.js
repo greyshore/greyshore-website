@@ -25,7 +25,8 @@ module.exports = {
 
       black: colors.black,
       black: {
-        custom: '#090212'
+        custom: '#090212',
+        input: '#5A5959'
       },
       white: colors.white,
       gray: colors.coolGray,
@@ -35,9 +36,15 @@ module.exports = {
         850: '#183B56'
       },
       red: colors.red,
+      red: {
+        error: '#e10512'
+      },
       yellow: colors.amber,
       green: colors.emerald,
       blue: colors.blue,
+      blue: {
+        850: '#1405c7'
+      },
       indigo: colors.indigo,
       purple: colors.violet,
       purple: {
