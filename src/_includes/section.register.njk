@@ -17,29 +17,29 @@
             </p>
             <div class="md:flex items-center mt-8">
               <div class=" w-full flex flex-col md:w-1/2">
-                <label for="fullname" autocomplete="name" class="font-light text-base text-black leading-none text-left">Full Name</label>
+                <label for="fullname" autocomplete="name" class="font-light text-lg text-black leading-none text-left">Full Name</label>
                 <input id="fullname" name="fullname" type="text" required aria-label="Full name (Required)" class="text-input p-3 mt-4 border rounded border-black"/>
               </div>
             </div>
             <div class="items-center mt-12 md:flex">
               <div class="w-full flex flex-col md:w-1/2 ">
-                <label for="phone" class="font-light text-base text-black leading-none text-left">Phone</label>
+                <label for="phone" class="font-light text-lg text-black leading-none text-left">Phone</label>
                 <input id="phone" name="phone" autocomplete="tel" type="tel" required aria-label="Phone number (Required)" class="text-input p-3 mt-4 bg-gray-100 border rounded border-black" />
               </div>
               <div class="w-full flex flex-col md:w-1/2 md:ml-6 md:mt-0 mt-4">
-                <label for="email" class="font-light text-base text-black leading-none text-left">Contact Email</label>
+                <label for="email" class="font-light text-lg text-black leading-none text-left">Contact Email</label>
                 <input id="email" name="email" type="email" autocomplete="email" required aria-label="Email (Required)" class="text-input p-3 mt-4 bg-gray-100 border rounded border-black"/>
               </div>
             </div>
                 <div>
                   <div class="w-full flex flex-col mt-8">
-                      <label for="message" class="font-light text-base text-black leading-none text-left">How can we help you?</label>
-                      <textarea id="message" name="message" type="text" required aria-label="Message (Required)" class="h-40 text-base text-input p-3 mt-4 bg-gray-100 border rounded border-black"></textarea>
+                      <label for="message" class="font-light text-lg text-black leading-none text-left">How can we help you?</label>
+                      <textarea id="message" name="message" type="text" required aria-label="Message (Required)" class="h-40 text-lg text-input p-3 mt-4 bg-gray-100 border rounded border-black"></textarea>
                   </div>
                 </div>
                 
                 <div class="pt-4 flex items-center w-full">
-                  <p class="font-light text-base text-black">{{item.data.privacy}}</p>
+                  <p class="font-light text-lg text-black">{{item.data.privacy}}</p>
                 </div>
                  <button class="submit mt-9 font-semibold leading-none text-white py-4 px-16 bg-purple-650 rounded hover:bg-purple-350 focus:ring-2 focus:ring-offset-2 focus:ring-purple-650 focus:outline-none">
                       Submit
