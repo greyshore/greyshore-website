@@ -12,10 +12,10 @@
   </div>
   {# Navigation list items #}
   <nav id="menu" >
-    <ul class="flex-col absolute top-16 left-0 z-20 font-semibold hidden pt-0 bg-white shadow-md w-full md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+    <ul role="menubar" aria-label="Main Menu" class="flex-col absolute top-16 left-0 z-20 font-semibold hidden pt-0 bg-white shadow-md w-full md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
     {% for item in site.navigation %}
-      <li>
-        <a class="w-full thick hover:border hover:border-purple-border hover:border-2 md:text-white md:w-auto py-2 md:py-4 md:px-8"
+      <li role="none">
+        <a role="menuitem" class="w-full thick focus:border-2 focus:border-white hover:border hover:border-purple-border hover:border-2 md:text-white md:w-auto py-2 md:py-4 md:px-8"
         href="{% if isFront %}{{item.url}}{% else %}{{ site.baseURL }}/{{item.url}}{% endif %}">
           {{item.title}}
         </a>
