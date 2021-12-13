@@ -271,12 +271,13 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Open Sans',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
-        'Open Sans',
+        // 'Open Sans',
         '"Helvetica Neue"',
         'Arial',
         '"Noto Sans"',
