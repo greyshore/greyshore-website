@@ -51,6 +51,7 @@ module.exports = {
         250: '#FAF8FF',
         350: '#6e527b',
         650: '#4a275a',
+        border: '#B798C6',
       },
       pink: colors.pink,
     },
