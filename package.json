@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "The Greyshore Associates Official Website",
   "scripts": {
-    "build": "npm-run-all eleventy:build",
+    "deploy": "npm-run-all eleventy:build",
     "dev": "npm-run-all eleventy:serve",
     "eleventy:serve": "eleventy --serve",
     "eleventy:build": "eleventy",
