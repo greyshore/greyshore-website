@@ -161,6 +161,12 @@ header > h1 {
   background-size: 100% 100%;
 }
 
+/* Process Section */
+
+.card-header {
+  display: inherit;
+}
+
 /* Quote Section */
 
 .bg-quote-pattern {
