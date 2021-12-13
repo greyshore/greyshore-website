@@ -10,7 +10,7 @@
           </p>
           <img class="max-h-10 sm:max-h-16" src="/img/edde.svg" alt="EDDE Logo">
         </div>
-        <p>{{ item.templateContent | safe }}</p>
+        <p class="text-lg">{{ item.data.subheader | safe }}</p>
       </div> 
       {# Loop through first row #}
       <div class="grid grid-cols-1 xl:grid-cols-3 gap-y-3 md:gap-1 md:py-5 xl:px-36">
@@ -19,7 +19,7 @@
             <img src="/img/features/{{ item.icon }}" alt="" class="m-4">
             <div class="sm:w-2/3 xl:w-3/4">
               <h3 class="tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2">{{ item.title }}</h3>
-              <div class="xs:text-m sm:text-lg mr-4">
+              <div class="text-lg mr-4">
                 {{ item.content | markdown | safe }}
               </div>
             </div>
