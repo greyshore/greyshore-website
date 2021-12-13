@@ -12,10 +12,17 @@
   </div>
   {# Navigation list items #}
   <nav id="menu" >
+<<<<<<< HEAD
     <ul aria-label="Main Menu" role="menubar" class="flex-col absolute top-16 left-0 z-100 hidden w-full bg-purple-650 text-white px-3 md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0 md:pt-2" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
     {% for item in site.navigation %}
       <li class="nav-list-items py-1 px-4 md:px-0 md:py-0">
         <a role="menuitem" class="w-full tracking-widest thick hover:border hover:border-purple-border hover:border-2 focus:border-2 focus:border-white-border md:text-white md:w-auto py-2 md:py-4 md:px-0"
+=======
+    <ul role="menubar" aria-label="Main Menu" class="flex-col absolute top-16 left-0 z-20 font-semibold hidden pt-0 bg-white shadow-md w-full md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+    {% for item in site.navigation %}
+      <li role="none">
+        <a role="menuitem" class="w-full thick focus:border-2 focus:border-white hover:border hover:border-purple-border hover:border-2 md:text-white md:w-auto py-2 md:py-4 md:px-8"
+>>>>>>> 40d28e4283bc41565f4c374eac564dd65cf7064a
         href="{% if isFront %}{{item.url}}{% else %}{{ site.baseURL }}/{{item.url}}{% endif %}">
           {{item.title}}
         </a>
