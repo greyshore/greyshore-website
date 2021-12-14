@@ -26,24 +26,22 @@
   <div class="md:grid md:grid-cols-3 md:auto-cols-min">
     <div class="col-start-1 col-end-1">
       <h3 class="text-gray-850 font-normal px-8 py-2">About Greyshore</h3>
-      <h3>
-        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="{% if isFront %}{{item.url}}{% else %}{{ site.baseURL }}/{{item.url}}{% endif %}">Home</a>
-      </h3>
-      <h3>
-        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="http://localhost:8080/#about">About Us</a>
-      </h3>
+      <ul>
+        <li><a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="{{site.url}}">Home</a></li>
+        <li> <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="{{site.url}}/#about">About Us</a></li>
+      </ul>
     </div>
     <div class="col-start-2 col-end-2">
       <h3 class="text-gray-850 font-normal px-8 py-2">Our Product</h3>
-      <h3>
-        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="http://localhost:8080/#edde">EDDE</a>
-      </h3>
+      <ul>
+        <li><a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="{{site.url}}/#edde">EDDE</a></li>
+      </ul>
     </div>
     <div class="col-start-3 col-end-3">
       <h3 class="text-gray-850 font-normal px-8 py-2">Contact Us</h3>
-      <h3>
-        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="http://localhost:8080/#register">Contact Us</a>
-      </h3>
+      <ul>
+        <li><a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="{{site.url}}/#register">Contact Us</a></li>
+      </ul>
     </div>
   </div>
   
