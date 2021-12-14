@@ -218,3 +218,17 @@ abbr[title] {
 a.top-link {
   text-underline-offset: .1rem;
 }
+
+a.footer-link:hover {
+  text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #4a275a;
+    text-decoration-thickness: 3px;
+    text-underline-offset: .1rem;
+}
+
+.social-icon:hover {
+  border: 2px solid #4a285a;
+  border-radius: 50%;
+  transition: all ease-out;
+}
