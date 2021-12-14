@@ -27,22 +27,22 @@
     <div class="col-start-1 col-end-1">
       <h3 class="text-gray-850 font-normal px-8 py-2">About Greyshore</h3>
       <h3>
-        <button class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="/">Home</button>
+        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="{% if isFront %}{{item.url}}{% else %}{{ site.baseURL }}/{{item.url}}{% endif %}">Home</a>
       </h3>
       <h3>
-        <button class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#about">About Us</button>
+        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="http://localhost:8080/#about">About Us</a>
       </h3>
     </div>
     <div class="col-start-2 col-end-2">
       <h3 class="text-gray-850 font-normal px-8 py-2">Our Product</h3>
       <h3>
-        <button class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#edde">EDDE</button>
+        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="http://localhost:8080/#edde">EDDE</a>
       </h3>
     </div>
     <div class="col-start-3 col-end-3">
       <h3 class="text-gray-850 font-normal px-8 py-2">Contact Us</h3>
       <h3>
-        <button class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="#register">Contact Us</button>
+        <a class="text-gray-550 px-8 py-2 hover:font-bold transform motion-safe:hover:scale-110" href="http://localhost:8080/#register">Contact Us</a>
       </h3>
     </div>
   </div>
@@ -50,10 +50,9 @@
   {# Column 3 #}
   <div class="flex flex-col flex-wrap px-8 py-2 ">
     <h3 class="text-gray-850 font-normal">Accessibility Statement</h3>
-    <p class="max-w-sm text-gray-550">{{site.accessibility}}</p>
+    <p class="max-w-sm text-gray-550">Greyshore believes in providing products and services that are accessible to the widest audience possible.This site was created using inclusive design principles, along with A11y considerations, to strive to meet WCAG 2.1 Level AA guidelines. Our credo is continuous improvement together, so if we missed something, let us know!</p>
   </div>
-  
-  
+   
 </footer>
 
  <!-- "Follow" Tooltip template -->
