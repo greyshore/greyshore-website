@@ -14,6 +14,9 @@ module.exports = function (eleventyConfig) {
     return markdown.render(value);
   });
 
+  // Copy `img/favicon/` to `_site/`
+  eleventyConfig.addPassthroughCopy({ "src/static/img/favicon": "/" });
+
   // rebuild on CSS changes
   eleventyConfig.addWatchTarget('./src/_includes/css/');
 
