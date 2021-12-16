@@ -3,18 +3,18 @@
     <div id="services">
       <div class="grid grid-cols-1 gap-2 text-center lg:px-36">
         <h2 class="tracking-widest text-purple-650 text-purple-650 mt-20">{{ item.data.title }}</h2>
-        <p class="font-medium tracking-wider text-center text-gray-850 text-xl xl:text-4xl p-2">
+        <p class="font-medium tracking-wider text-center text-gray-850 text-2xl xl:text-4xl mb-4">
           {{item.data.subtitle | safe}}
         </p>
         <p class="font-light text-black text-lg lg:text-xl px-4">We take a holistic three-step approach when working with our clients to achieve their desired results:</p>
         <p>{{ item.templateContent | safe }}</p>
       </div> 
       </div>
-    <ul role="list" class="mt-3 py-0 md:py-12 lg:py-0 lg:px-24 md:px-36 px-8 grid grid-cols-1 lg:grid-cols-3 gap-2 sm:gap-6 h-2/3">
+    <ul role="list" class="items-start mt-3 py-0 md:py-12 lg:py-0 lg:px-24 md:px-36 px-8 grid grid-cols-1 lg:grid-cols-3 gap-2 sm:gap-6 h-2/3">
       {% for item in services.cards %}
-        <li class="col-span-1 flex flex-col justify-center items-center md:items-left md:text-left md:items-start py-2 md:py-8 px-1 md:px-8 bg-white md:border md:border-black-custom rounded-lg my-4 lg:my-20 lg:m-2">
-          <h2 class="card-header h-10 text-gray-850 text-3xl font-semibold"><span><img src="/img/{{ item.icon }}" alt=""></span>{{ item.title }}</h2>
-          <p class="text-center md:text-left mt-2 text-gray-850 text-lg">{{ item.content }}</p>
+        <li class="col-span-1 flex flex-col justify-center md:items-left md:text-left md:items-start py-2 md:py-8 px-0 bg-white md:border md:border-black-custom rounded-lg my-4 lg:my-20 lg:m-2">
+          <h2 class="card-header h-10 text-2xl xl:text-2xl items-end font-semibold items-end"><span><img src="/img/{{ item.icon }}" alt=""></span>{{ item.title }}</h2>
+          <p class="md:text-left mt-2 font-light text-lg">{{ item.content }}</p>
         </li>
       {% endfor %}
     </ul>

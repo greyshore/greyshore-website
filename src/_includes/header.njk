@@ -11,7 +11,7 @@
     </button>
   </div>
   {# Navigation list items #}
-  <nav id="menu" >
+  <nav id="menu" class="md:pt-8 lg:pt-0" >
     <ul aria-label="Main Menu" role="menubar" class="flex-col absolute top-16 left-0 z-100 hidden w-full bg-purple-650 text-white px-3 md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0 md:pt-2" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
     {% for item in site.navigation %}
       <li role="none" class="nav-list-items py-1 px-4 md:px-0 md:py-0">
@@ -27,7 +27,7 @@
   </nav>
  {# Hero #}
  <div class="flex flex-col text-center justify-center h-52 px-4 md:h-72 lg:h-96">
-    <h1 class="text-white tracking-widest text-xl sm:px-40 md:text-3xl lg:text-4xl xl:text-6xl">
+    <h1 class="text-white tracking-widest text-xl md:px-24 md:text-3xl lg:text-4xl xl:text-6xl">
       {{site.hero}}
     </h1>
   </div>
