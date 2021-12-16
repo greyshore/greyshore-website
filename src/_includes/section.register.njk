@@ -3,7 +3,7 @@
 {% for item in collections.sections %}
   {% if item.data.type === 'register' %}
     <div id="register" class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-750">
-        <h2 class="font-bold tracking-widest text-gray-850 text-center text-2xl mb-4 pt-24 xl:text-4xl">{{ item.data.title }}</h2>
+        <h2 class="font-bold tracking-widest text-gray-850 text-center text-2xl mb-4 pt-10 xl:text-4xl">{{ item.data.title }}</h2>
         <div class="font-light text-gray-400 text-xl">
           {{ item.templateContent | safe }}
         </div>
@@ -24,7 +24,7 @@
             <div class="items-center mt-12 md:flex">
               <div class="w-full flex flex-col md:w-1/2 ">
                 <label for="phone" class="font-light text-lg text-black leading-none text-left">Phone</label>
-                <input id="phone" name="phone" autocomplete="tel" type="tel" aria-label="Phone number (Required)" class="text-input p-3 mt-4 bg-gray-100 border rounded border-black" />
+                <input id="phone" name="phone" autocomplete="tel" type="tel" aria-label="Phone number" class="text-input p-3 mt-4 bg-gray-100 border rounded border-black" />
               </div>
               <div class="w-full flex flex-col md:w-1/2 md:ml-6 md:mt-0 mt-4">
                 <label for="email" class="font-light text-lg text-black leading-none text-left">Contact Email *</label>
@@ -36,10 +36,6 @@
                       <label for="message" class="font-light text-lg text-black leading-none text-left">How can we help you? *</label>
                       <textarea id="message" name="message" type="text" required aria-label="Message (Required)" class="h-40 text-lg text-input p-3 mt-4 bg-gray-100 border rounded border-black"></textarea>
                   </div>
-                </div>
-                
-                <div class="pt-4 flex items-center w-full">
-                  <p class="font-light text-lg text-black">{{item.data.privacy}}</p>
                 </div>
                  <button class="submit mt-9 font-semibold leading-none text-white py-4 px-16 bg-purple-650 rounded hover:bg-purple-350 focus:ring-2 focus:ring-offset-2 focus:ring-purple-650 focus:outline-none">
                       Submit
