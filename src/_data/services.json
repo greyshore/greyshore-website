@@ -2,16 +2,16 @@
   "cards": [{
     "title": "Discover",
     "icon": "discover.svg",
-    "content": "Every journey begins with discovery. We identify high-impact areas of increased value delivery for your company -- ranging from new insights for customer experience to software delivery, automation, and vulnerability management."
+    "content": "Every journey begins with discovery. We identify high-impact areas of increased value delivery for your company -- ranging from new insights for accessible customer experiences to software delivery, automation, and vulnerability management."
   },
   {
     "title": "Define",
     "icon": "define.svg",
-    "content": "X marks the spot! Working closely with your team, our product research and strategy professionals can help map the opportunity landscape, uncovered in discovery, and plot a course that meets your goals."
+    "content": "X marks the spot! Working closely with your team, our product research and strategy professionals can help map the opportunity landscape, uncovered in value-driven discovery, while plotting a course that meets your goals and expectations."
   },
   {
     "title": "Deliver",
     "icon": "deliver.svg",
-    "content": "Let's partner on the adventure. Our digital service professionals work closely with your team on co-delivery, while strengthening your team's capabilities through the use of Agile best practices. Leaving your team empowered to take the wheel after our engagement has ended."
+    "content": "Let's partner on the adventure. Our digital service professionals work closely with your team on co-delivery, while strengthening your team's capabilities through the use of Agile best practices. Leaving your team empowered to take the wheel!"
   }]
 }

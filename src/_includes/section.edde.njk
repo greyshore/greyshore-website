@@ -5,21 +5,20 @@
       <div class="grid grid-cols-1 gap-2 text-center lg:px-36">
         <h2 class="tracking-widest text-purple-650 mt-20">{{ item.data.title }}</h2>
         <div class="flex justify-center items-center flex-row flex-wrap">
-          <p class="text-2xl sm:text-3xl font-medium tracking-wider p-2">
+          <p class="text-left md:text-center text-2xl sm:text-3xl font-medium tracking-wider p-2">
             {{item.data.subtitle | safe}}
           </p>
           <img class="max-h-10 sm:max-h-16" src="/img/edde.svg" alt="EDDE Logo">
         </div>
-        <p class="text-lg">{{ item.data.subheader | safe }}</p>
+        <p class="font-light text-lg text-left pb-4">{{ item.data.subheader | safe }}</p>
       </div> 
       {# Loop through first row #}
-      <div class="grid grid-cols-1 xl:grid-cols-3 gap-y-3 md:gap-1 md:py-5 xl:px-36">
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-y-3 md:gap-1 md:py-5 px-0 xl:px-36">
         {% for item in edde.row1 %}
-          <div class="flex flex-row justify-center items-start lg:m-2 ">
-            <img src="/img/features/{{ item.icon }}" alt="" class="m-4">
+          <div class="flex flex-row justify-center items-start lg:m-2 "> 
             <div class="sm:w-2/3 xl:w-3/4">
-              <h3 class="tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2">{{ item.title }}</h3>
-              <div class="text-lg mr-4">
+              <h3 class="flex items-end tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2"><span class="pr-2"><img src="/img/features/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
+              <div class="font-light text-lg mr-4">
                 {{ item.content | markdown | safe }}
               </div>
             </div>
@@ -27,13 +26,12 @@
         {% endfor %}
       </div>
       {# Loop through second row #}
-      <div class="grid grid-cols-1 xl:grid-cols-2 gap-y-3 md:gap-1 md:px-2 xl:px-60">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-y-3 md:gap-1 px-0 xl:px-60 pt-4">
         {% for item in edde.row2 %}
           <div class="flex flex-row justify-center items-start lg:m-2">
-            <img src="/img/features/{{ item.icon }}" alt="" class="m-4">
             <div class="sm:w-2/3 xl:w-3/5">
-              <h3 class="tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2">{{ item.title }}</h3>
-              <div class="sm:text-lg mr-4">
+              <h3 class="flex items-end tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2"><span class="pr-2"><img src="/img/features/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
+              <div class="font-light text-lg mr-4">
                 {{ item.content | markdown | safe }}
               </div>
             </div>

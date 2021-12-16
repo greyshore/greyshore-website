@@ -2,8 +2,8 @@
 
 {% for item in collections.sections %}
   {% if item.data.type === 'register' %}
-    <div id="register" class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-750">
-        <h2 class="font-bold tracking-widest text-gray-850 text-center text-2xl mb-4 pt-10 xl:text-4xl">{{ item.data.title }}</h2>
+    <div id="register" class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-750 mt-12 mb-10">
+        <h2 class="font-medium tracking-wider text-center xl:text-left text-gray-850 text-2xl xl:text-4xl mb-4">{{ item.data.title }}</h2>
         <div class="font-light text-gray-400 text-xl">
           {{ item.templateContent | safe }}
         </div>
@@ -18,7 +18,7 @@
             <div class="md:flex items-center mt-8">
               <div class=" w-full flex flex-col md:w-1/2">
                 <label for="fullname" autocomplete="name" class="font-light text-lg text-black leading-none text-left">Full Name *</label>
-                <input id="fullname" name="fullname" type="text" required aria-label="Full name (Required)" class="text-input p-3 mt-4 border rounded border-black focus:border-2"/>
+                <input id="fullname" name="fullname" type="text" required aria-label="Full name (Required)" class="text-input p-3 mt-4 border rounded border-black invalid:border-red-600 invalid:text-red-600"/>
               </div>
             </div>
             <div class="items-center mt-12 md:flex">

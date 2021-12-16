@@ -158,7 +158,7 @@ header > h1 {
 
 .bg-edde-pattern {
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100% !important;
 }
 
 /* Process Section */
@@ -232,7 +232,8 @@ a.footer-link:hover {
 }
 
 .social-icon:hover {
-  border: 3px solid #4a285a;
+  border: 3px solid rgba(74, 40, 90);
+  fill: #4a285acc;
   border-radius: 50%;
   transition: all ease-out;
 }
