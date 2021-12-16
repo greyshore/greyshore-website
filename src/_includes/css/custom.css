@@ -232,3 +232,24 @@ a.footer-link:hover {
   border-radius: 50%;
   transition: all ease-out;
 }
+
+.social-row {
+  padding: 0 2.5rem;
+}
+
+@media (min-width: 375px) {
+  .social-row {
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 425px) {
+  .social-row {
+    padding: 0 5.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-row {
+    padding: 0;
+  }
+}
