@@ -1,6 +1,6 @@
 {% for item in collections.sections %}
   {% if item.data.type === 'services' %}
-    <div id="services">
+    <div id="our-process">
       <div class="grid grid-cols-1 gap-2 text-center lg:px-36">
         <h2 class="tracking-widest text-purple-650 text-purple-650 mt-20">{{ item.data.title }}</h2>
         <p class="font-medium tracking-wider text-center text-gray-850 text-2xl xl:text-4xl mb-4">
@@ -19,7 +19,7 @@
       {% endfor %}
     </ul>
     <div class="text-center">
-      <a title="Skip down to Contact Us form" class="footer-link h-10 text-2xl xl:text-2xl font-semibold text-purple-650 p-2" href="/#register" title="Skip down to Contact Us form">Get in Touch<span aria-hidden="true"> ▼</span></a>
+      <a title="Skip down to Contact Us form" class="footer-link h-10 text-2xl xl:text-2xl font-semibold text-purple-650 p-2" href="/#contact-us" title="Skip down to Contact Us form">Get in Touch<span aria-hidden="true"> ▼</span></a>
     </div>
     
   {% endif %}

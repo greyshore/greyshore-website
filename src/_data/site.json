@@ -11,19 +11,19 @@
     },
     {
       "title": "About Us",
-      "url": "#about"
+      "url": "#about-us"
     },
     {
       "title": "Our Process",
-      "url": "#services"
+      "url": "#our-process"
     },
     {
       "title": "Our Product",
-      "url": "#edde"
+      "url": "#our-product"
     },
     {
       "title": "Contact Us",
-      "url": "#register"
+      "url": "#contact-us"
     }
   ],
   "hero": "Digital Transformation begins with people. All people.",
