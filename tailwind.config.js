@@ -33,7 +33,8 @@ module.exports = {
       gray: colors.coolGray,
       gray: {
         550: '#5A7184',
-        850: '#183B56'
+        850: '#183B56',
+        light: '#eee',
       },
       red: colors.red,
       red: {
