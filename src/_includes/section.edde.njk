@@ -17,7 +17,7 @@
         {% for item in edde.row1 %}
           <div class="flex flex-row justify-center items-start lg:m-2 "> 
             <div class="sm:w-2/3 xl:w-3/4">
-              <h3 class="flex items-end tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2"><span class="pr-2"><img src="/img/features/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
+              <h3 class="flex items-end tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2"><span class="pr-2"><img class="w-12" src="/img/features/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
               <div class="font-light text-lg mr-4">
                 {{ item.content | markdown | safe }}
               </div>
@@ -30,7 +30,7 @@
         {% for item in edde.row2 %}
           <div class="flex flex-row justify-center items-start lg:m-2">
             <div class="sm:w-2/3 xl:w-3/5">
-              <h3 class="flex items-end tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2"><span class="pr-2"><img src="/img/features/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
+              <h3 class="flex items-end tracking-wider text-purple-300 font-bold text-xl sm:text-1xl my-2"><span class="pr-2"><img class="w-12" src="/img/features/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
               <div class="font-light text-lg mr-4">
                 {{ item.content | markdown | safe }}
               </div>

@@ -13,13 +13,13 @@
     <ul role="list" class="items-start mt-3 py-0 md:py-12 lg:py-0 lg:px-24 md:px-36 px-8 grid grid-cols-1 lg:grid-cols-3 gap-2 sm:gap-6 h-2/3">
       {% for item in services.cards %}
         <li class="col-span-1 flex flex-col justify-center md:items-left md:text-left md:items-start py-2 md:py-8 px-0 md:px-8 lg:h-2/3 bg-white md:border md:border-gray-light md:shadow-md md:rounded rounded-lg my-4 lg:min-h-card xl:min-h-cardXl lg:my-16 lg:m-2">
-          <h3 class="card-header h-10 tracking-wider text-xl sm:text-1xl items-end font-bold"><span><img src="/img/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
+          <h3 class="card-header h-10 tracking-wider text-xl sm:text-1xl items-end font-bold"><span><img class="w-8 mr-2" src="/img/{{ item.icon }}" alt=""></span>{{ item.title }}</h3>
           <p class="md:text-left mt-2 font-light text-lg">{{ item.content }}</p>
         </li>
       {% endfor %}
     </ul>
     <div class="text-center">
-      <a title="Skip down to Contact Us form" class="footer-link h-10 text-2xl xl:text-2xl font-semibold text-purple-650" href="/#register" title="Skip down to Contact Us form">Get in Touch<span aria-hidden="true"> ▼</span></a>
+      <a title="Skip down to Contact Us form" class="footer-link h-10 text-2xl xl:text-2xl font-semibold text-purple-650 p-2" href="/#register" title="Skip down to Contact Us form">Get in Touch<span aria-hidden="true"> ▼</span></a>
     </div>
     
   {% endif %}

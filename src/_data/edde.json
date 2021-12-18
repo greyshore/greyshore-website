@@ -5,7 +5,7 @@
       "content": "delivering software products and services, that need to rapidly scaffold ‘fit for purpose’ underlying public-cloud platforms."
     },
     {
-      "title": "State and Local Governments",
+      "title": "State Governments",
       "icon": "governments.svg",
       "content": "operating server rooms, that want to move to the cloud but don’t have extensive infrastructure as code knowledge"
     },
@@ -23,7 +23,7 @@
       "content": "in need of turnkey innovation labs or new product development platforms."
     },
     {
-      "title": "Bootcamps, hackathons, or apprenticed software training",
+      "title": "Software Trainings",
       "icon": "training.svg",
       "content": "that need a turnkey public-cloud platform to support their offerings."
     }
