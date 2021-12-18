@@ -575,6 +575,8 @@ module.exports = {
       0: '0px',
       full: '100%',
       screen: '100vh',
+      card: '400px',
+      cardXl: '300px'
     },
     minWidth: {
       0: '0px',
