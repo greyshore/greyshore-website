@@ -259,11 +259,11 @@ a.footer-link:hover {
   }
 }
 
-.permalink {
-  display: none;
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+  scroll-behavior: auto;
 }
-
-.permalink:focus {
-  display: block;
-  border: 2px solid red;
 }
