@@ -4,7 +4,7 @@
   "description": "Greyshore is a modern people-driven service that provides research, strategy, delivery, and up-skilling to support your company on every point of it's journey.",
   "title": "Greyshore Associates | Official Website",
   "language": "en",
-  "image": "https://github.com/greyshore/greyshore-website/blob/c7575773a72a87569f2ce3638c74472156fa15d3/src/static/img/linkedinCard2.png",
+  "image": "src/static/img/linkedinCard2.png",
   "navigation": [
     {
       "title": "Home",
