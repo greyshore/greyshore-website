@@ -1,7 +1,7 @@
 <div x-data="{ mobileMenuOpen : false }" class="flex flex-wrap flex-row justify-between py-6 px-6 relative md:items-center md:justify-center lg:justify-between">
   <div class="w-full self-start flex flex-row justify-between items-center md:w-auto md:self-center md:flex-none">
     {# GS Logo #}
-    <a href="{{site.baseURL}}" class="text-lg tracking-widest thick text-white md:text-2xl focus:border focus:border-white-border p-2">Greyshore Associates</a>
+    <a id="logo" href="{{site.baseURL}}" class="text-lg tracking-widest thick text-white md:text-2xl focus:border focus:border-white-border p-2">Greyshore Associates</a>
     {# Nav Button #}
     <button 
       @click="mobileMenuOpen = !mobileMenuOpen" 
@@ -15,7 +15,7 @@
     <ul aria-label="Main Menu" role="menubar" class="flex-col absolute top-16 left-0 z-100 hidden w-full bg-purple-650 text-white px-3 md:top-0 md:relative md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:bg-transparent md:p-0 md:pt-2" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
     {% for item in site.navigation %}
       <li role="none" class="nav-list-items py-1 px-4 md:px-0 md:py-0">
-        <a role="menuitem" class="w-full tracking-widest thick hover:border hover:border-purple-border hover:border-2 focus:border-2 focus:border-white-border md:text-white md:w-auto py-2 md:py-4 px-4"
+        <a role="menuitem" aria-label="{{ item.aria }}" class="w-full tracking-widest thick hover:border hover:border-purple-border hover:border-2 focus:border-2 focus:border-white-border md:text-white md:w-auto py-2 md:py-4 px-4"
         href="{% if isFront %}{{item.url}}{% else %}{{ site.baseURL }}/{{item.url}}{% endif %}">
           {{item.title}}
         </a>

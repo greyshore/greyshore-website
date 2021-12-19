@@ -11,19 +11,23 @@
     },
     {
       "title": "About Us",
-      "url": "#about-us"
+      "url": "#about-us",
+      "aria": "Link to About Us section"
     },
     {
       "title": "Our Process",
-      "url": "#our-process"
+      "url": "#our-process",
+      "aria": "Link to Our Process section"
     },
     {
       "title": "Our Product",
-      "url": "#our-product"
+      "url": "#our-product",
+      "aria": "Link to Our Product section"
     },
     {
       "title": "Contact Us",
-      "url": "#contact-us"
+      "url": "#contact-us",
+      "aria": "Link to Contact Us section"
     }
   ],
   "hero": "Digital Transformation begins with people. All people.",
