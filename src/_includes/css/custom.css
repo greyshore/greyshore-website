@@ -154,13 +154,6 @@ header > h1 {
   line-height: 1.25;
 }
 
-/* Edde Section */
-
-.bg-edde-pattern {
-  background-repeat: no-repeat;
-  background-size: 100% 120% !important;
-}
-
 /* Process Section */
 
 .card-header {
