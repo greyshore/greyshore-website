@@ -10,13 +10,13 @@
 	});
 
 	it('Has title', () => {
-		cy.get('title').should('not.be.empty');
+		cy.title().should("eq", "Greyshore Associates | Official Website");
 	});
 
 	it('Has description', () => {
 		cy.get('meta[name="description"]')
 			.should('have.attr', 'content')
-			.should('not.be.empty');
+			.should("eq", "Greyshore is a modern people-driven service that provides research, strategy, delivery, and up-skilling to support your company on every point of it's journey.");
 	});
 
 	it('Has correct charset', () => {
@@ -26,7 +26,7 @@
 	it('Has responsive viewport meta tag', () => {
 		cy.get('meta[name="viewport"]')
 			.should('have.attr', 'content')
-			.should('eq', 'width=device-width, initial-scale=1');
+			.should('eq', 'width=device-width,initial-scale=1');
 	});
 
 	it('Has UA meta tag', () => {
@@ -34,14 +34,9 @@
 	});
 });
 
-/**
- * Check Other Tags
- *
- * Looks for other essential tags within head
- */
 describe('Has other required tags', () => {
 	it('Has Favicon', () => {
-		cy.get('link[rel="shortcut icon"]')
+		cy.get('link[rel="icon"]')
 			.should('have.attr', 'href')
 			.should('not.be.empty');
 	});

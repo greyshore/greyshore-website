@@ -1,5 +1,6 @@
 {
 	"baseUrl": "http://localhost:8080",
 	"hasAnalytics": false,
-	"hasLinkingData": false
+	"hasLinkingData": false,
+	"failOnStatusCode": false
 }
