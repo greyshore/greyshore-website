@@ -15,14 +15,14 @@
       <div class="w-full">
       <div class="max-w-5xl mx-auto px-6 mb-12 sm:px-6 lg:px-8">
         <div class="bg-white w-full text-center md:text-left md:border md:border-gray-light md:shadow-md rounded p-4 md:p-8 sm:p-12 lg:my-12">   
-          <form action="" method="POST" name="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+          <form id="contact-form" action="" method="POST" name="contact-form" netlify-honeypot="bot-field" data-netlify="true">
             <p class="hidden">
               <label>Fill this out if you're a bot: <input name="bot-field" /></label>
             </p>
             <div class="md:flex items-center mt-8">
               <div class=" w-full flex flex-col md:w-1/2">
                 <label for="fullname" class="font-light text-lg text-black leading-none text-left">Full Name *</label>
-                <input id="fullname" name="fullname" autocomplete="name" type="text" required aria-label="Full name (Required)" class="text-input p-3 mt-4 border rounded border-black invalid:border-red-600 invalid:text-red-600"/>
+                <input id="fullname" name="fullname" autocomplete="name" type="text" required="true" aria-label="Full name (Required)" class="text-input p-3 mt-4 border rounded border-black invalid:border-red-600 invalid:text-red-600"/>
               </div>
             </div>
             <div class="items-center mt-12 md:flex">
@@ -41,7 +41,7 @@
                   <textarea id="message" name="message" required aria-label="Message (Required)" class="h-40 text-lg text-input p-3 mt-4 bg-gray-100 border rounded border-black"></textarea>
               </div>
             </div>
-            <button class="submit mt-9 font-semibold leading-none text-white py-4 px-16 bg-purple-650 rounded hover:bg-purple-350 focus:ring-2 focus:ring-offset-2 focus:ring-purple-650 focus:outline-none">
+            <button id="submit" class="submit mt-9 font-semibold leading-none text-white py-4 px-16 bg-purple-650 rounded hover:bg-purple-350 focus:ring-2 focus:ring-offset-2 focus:ring-purple-650 focus:outline-none">
                 Submit
             </button>
           </form>
