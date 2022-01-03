@@ -2,7 +2,8 @@
   <div class="w-full self-start flex flex-row justify-between items-center md:w-auto md:self-center md:flex-none">
     {# GS Logo #}
     <a id="logo" href="{{site.baseURL}}" class="text-lg tracking-widest thick text-white md:text-2xl focus:border focus:border-white-border p-2">Greyshore Associates</a>
-    {# Nav Button #}
+    <a id="skip-link" href="#about-us" class="visually-hidden w-full tracking-widest thick hover:border hover:border-purple-border hover:border-2 focus:border-2 focus:border-white-border text-white w-auto py-2 px-4 mobile-link">Skip to main content</a>
+ {# Nav Button #}
     <button
       id="mobile-menu" 
       @click="mobileMenuOpen = !mobileMenuOpen" 
