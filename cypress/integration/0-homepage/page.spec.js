@@ -1,4 +1,4 @@
-describe('Page has correct components', () => {
+describe('Homepage functionality', () => {
 	it('Load page', () => {
 		cy.visit('/');
 	});
@@ -8,6 +8,13 @@ it('displays html element with lang attribute', () => {
 	cy.get('html')
 	.invoke('attr', 'lang')
   .should('eq', 'en');
+});
+
+// Skip link navigates to About Us section
+it("displays skip-link that navigates to About Us section when focused", () => {
+	cy.get("a#skip-link").contains("Skip to main content").focus().click();
+	cy.url().should("include", "/#about-us");
+	cy.go('back')
 });
 
 // Navigation has correct number of items
