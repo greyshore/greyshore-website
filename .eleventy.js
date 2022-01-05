@@ -18,7 +18,7 @@ async function imageShortcode(src, alt, sizes) {
   };
 
   (async () => {
-    let url = "src/static/img/social.png";
+    let url = "https://www.flickr.com/photos/194726204@N02/51800576522";
     let stats = await Image(url);
   
     console.log( stats );
