@@ -6,7 +6,7 @@
   "type": "website",
   "handle": "@greyshored",
   "language": "en",
-  "image": "src/static/img/social.png",
+  "image": "/src/static/img/social.png",
   "navigation": [
     {
       "title": "Home",
