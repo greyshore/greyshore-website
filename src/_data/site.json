@@ -6,7 +6,7 @@
   "type": "website",
   "handle": "@greyshored",
   "language": "en",
-  "image": "https://www.flickr.com/photos/194726204@N02/51799308364/",
+  "image": "src/static/img/social.png",
   "navigation": [
     {
       "title": "Home",
