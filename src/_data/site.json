@@ -5,6 +5,7 @@
   "title": "Greyshore Associates | Official Website",
   "type": "website",
   "handle": "@greyshored",
+  "image": "/src/static/img/social.png",
   "language": "en",
   "navigation": [
     {
