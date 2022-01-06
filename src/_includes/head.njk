@@ -14,7 +14,9 @@
 <meta property="og:title" content="{{ site.title }}">
 <meta property="og:type" content="{{ site.type }}">
 <meta property="og:description" content="{{ site.description }}">
-<meta property="og:image" content="https://github.com/greyshore/greyshore-website/blob/923de88eeec4f9f96dd5ef20bc507d4a666cc41b/src/static/img/social.png">
+<meta property="og:image:url" content="{% static 'src/static/img/social.png' %}"/>
+<meta property="og:image:secure_url" content="{% static 'src/static/img/social.png' %}"/>
+<meta property="og:image:type" content="image/png" />
 <meta property="og:url" content="{{ absolutePageUrl }}">
 <meta name="twitter:site" content="{{ site.handle }}">
 <meta name="twitter:card" content="summary_large_image">
