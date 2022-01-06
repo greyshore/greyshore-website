@@ -1,43 +1,10 @@
 const htmlmin = require("html-minifier");
 const markdownIt = require('markdown-it');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const Image = require("@11ty/eleventy-img");
-
-// Image shortcode for social sharing
-async function imageShortcode(src, alt, sizes) {
-  let metadata = await Image(src, {
-    widths: [null],
-    formats: ["png"]
-  });
-
-  let imageAttributes = {
-    alt: "",
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-
-  (async () => {
-    let url = "https://www.flickr.com/photos/194726204@N02/51800576522";
-    let stats = await Image(url);
-  
-    console.log( stats );
-  })();
-
-  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-  return Image.generateHTML(metadata, imageAttributes, {
-    whitespaceMode: "inline"
-  });
-}
 
 module.exports = function (eleventyConfig) {
   // PLUGINS
   eleventyConfig.addPlugin(pluginRss);
-
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
-  eleventyConfig.addLiquidShortcode("image", imageShortcode);
-  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
-  
 
   // shortcode to render markdown from string => {{ STRING | markdown | safe }}
   eleventyConfig.addFilter('markdown', function(value) {
