@@ -15,7 +15,18 @@
       <div class="w-full">
       <div class="max-w-5xl mx-auto px-6 mb-12 sm:px-6 lg:px-8">
         <div class="bg-white w-full text-center md:text-left md:border md:border-gray-light md:shadow-md rounded p-4 md:p-8 sm:p-12 lg:my-12">   
-          <form id="contact-form" action="" method="POST" name="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+
+            <!-- hubspot form -->
+            <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                portalId: "242025548",
+                formId: "cdc2278d-bb8d-4f60-9150-ae00cebd9469",
+                region: "na2"
+              });
+            </script>
+
+    <!--    <form id="contact-form" action="" method="POST" name="contact-form" netlify-honeypot="bot-field" data-netlify="true">
             <p class="hidden">
               <label>Fill this out if you're a bot: <input name="bot-field" /></label>
             </p>
@@ -45,6 +56,8 @@
                 Submit
             </button>
           </form>
+    -->
+
         </div>
       </div>
     </div>

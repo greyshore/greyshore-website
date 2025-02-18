@@ -1,8 +1,8 @@
 ---
-subtitle: Introducing
-title: OUR PRODUCT 
-afterTitle: 
+subtitle: Introducing Studios and Masterclasses
+title: STUDIOS AND MASTERCLASSES 
+afterTitle: Studios and masterclasses
 type: edde
-permalink: Permalink for Our Product
-subheader: Introducing our first mate EDDE (ee-dee) -- an infrastructure scaffolding service that helps your team focus on creating and testing your product ideas, rather then structure to support them. EDDE saves your team time and aggravation by providing the tooling to quickly create a public cloud infrastructure and SaaS deployment platform tailored specifically to your products architecture profiles. EDDE is for...
+permalink: Permalink for Studios and Masterclasses
+subheader: If you study musical performance you may have participated in studios and masterclasses. When you or your team needs to elevate performance, or just 'tune up' some basic skills or strategies for delivering value from technology, join a curated studio or masterclass to tackle your trickiest passages.
 ---

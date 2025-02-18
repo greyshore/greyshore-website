@@ -64,9 +64,9 @@ it('displays navigation items with aria-labels', () => {
 		cy.go('back')
 	});
 
-	it("navigates to Our Product section", () => {
-		cy.get("nav a").contains("Our Product").click();
-		cy.url().should("include", "/#our-product");
+	it("navigates to Our Services section", () => {
+		cy.get("nav a").contains("Our Services").click();
+		cy.url().should("include", "/#our-services");
 		cy.go('back')
 	});
 

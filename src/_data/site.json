@@ -22,9 +22,9 @@
       "aria": "Link to Our Process section"
     },
     {
-      "title": "Our Product",
-      "url": "#our-product",
-      "aria": "Link to Our Product section"
+      "title": "Our Services",
+      "url": "#our-services",
+      "aria": "Link to Our Services section"
     },
     {
       "title": "Contact Us",
@@ -32,7 +32,7 @@
       "aria": "Link to Contact Us section"
     }
   ],
-  "hero": "Digital Transformation begins with people. All people.",
+  "hero": "The technology is the easy part.",
   "social": [
     {
       "title": "Medium",
