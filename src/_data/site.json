@@ -27,6 +27,11 @@
       "aria": "Link to Our Services section"
     },
     {
+      "title": "Our Work",
+      "url": "#our-work",
+      "aria": "Link to Our Work section"
+    },
+    {
       "title": "Contact Us",
       "url": "#contact-us",
       "aria": "Link to Contact Us section"

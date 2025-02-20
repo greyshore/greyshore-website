@@ -1,0 +1,17 @@
+{
+    "cards": [{
+      "title": "Global Remote Proctoring",
+      "icon": "deliver.svg",
+      "content": "When the pandemic closed walk-in testing centers, we delivered a globally scalable remote proctoring capability in three months using Azure and Twilio. Read the Twilio case study, below."
+    },
+    {
+      "title": "Technology Topology and OCTO",
+      "icon": "deliver.svg",
+      "content": "Starting with 'make engineering go faster', we established an evolutionary technology strategy, team topology, and 'OCTO' or 'Office of the CTO' to improve decision making and value delivery at a large non-profit organization."
+    },
+    {
+      "title": "SAAS Identity and API strategy",
+      "icon": "deliver.svg",
+      "content": "At a growing financial services SAAS organization, we untangled legacy identity and access to champion OKTA implementation and a define a scalable and secure API strategy."
+    }]
+  }

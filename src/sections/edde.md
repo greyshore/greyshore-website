@@ -1,6 +1,6 @@
 ---
 subtitle: Introducing Studios and Masterclasses
-title: STUDIOS AND MASTERCLASSES 
+title: OUR SERVICES
 afterTitle: Studios and masterclasses
 type: edde
 permalink: Permalink for Studios and Masterclasses
